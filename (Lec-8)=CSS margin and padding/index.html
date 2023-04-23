@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            background-color:#00ffff46;
+        }
+
+
+        .container {
+            background-color: rgb(228 7 240);
+            border: 3px solid rgb(17, 96, 234);
+
+            /* we can set margin/padding for top, left and right like this */
+            /* padding-top:79px;
+             padding-bottom: 79px;
+             padding-left:34px;
+             padding-right:79px;  */
+
+            /* padding/margin = top right bottom left; */
+            /*padding= top   right  bottom  left */
+            /*margin= top   right  bottom  left */
+
+            /* padding:22px  50px  62px 85px; */
+            /* margin:23px  55px  6px 78px; */
+
+            /* padding: 30px;   for all side */
+            /* margin: 15px;   for all side */
+
+            /* padding: y(top/bottom) x(left/right) */
+            /* margin: y(top/bottom) x(left/right) */
+
+            padding: 34px 19px;
+            margin: 34px 14px;
+            border-radius: 20px;
+            width: 530px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is heading.</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae mollitia ad aperiam labore cum
+            reiciendis qui amet incidunt! Iste magni corrupti earum asperiores. Minus inventore earum voluptatum cum
+            dolorem reiciendis.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is heading.</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae mollitia ad aperiam labore cum
+            reiciendis qui amet incidunt! Iste magni corrupti earum asperiores. Minus inventore earum voluptatum cum
+            dolorem reiciendis.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is heading.</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae mollitia ad aperiam labore cum
+            reiciendis qui amet incidunt! Iste magni corrupti earum asperiores. Minus inventore earum voluptatum cum
+            dolorem reiciendis.</p>
+    </div>
+
+</body>
+
+</html>
