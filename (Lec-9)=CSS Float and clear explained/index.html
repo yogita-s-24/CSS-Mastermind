@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font and Clear</title>
+    <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+        } */
+
+        .container {
+            width: 900px;
+            border: solid 5px rgb(113, 113, 195);
+            margin: auto;
+            background-color: bisque;
+
+        }
+
+        .item {
+            border: 3px solid #3c2332e3;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(165 161 177);
+        }
+
+        #fruit {
+            float: right;
+            width: 48%;
+        }
+
+        #computer {
+            float: left;
+            width: 48%;
+        }
+
+        #stationary {
+            /* float:left; */
+            clear: both;
+            clear: left;
+            width: 98%;
+        }
+
+        p,
+        h3 {
+            /* text-align: right;
+            text-align: left;
+            text-align: center; */
+            text-align: justify;
+        }
+
+        h1 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin: auto;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quisquam,
+                amet, soluta dolores odit eligendi quos placeat totam laudantium officiis labore atque itaque!</p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quisquam,
+                amet, soluta dolores odit eligendi quos placeat totam laudantium officiis labore atque itaque!</p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quisquam,
+                amet, soluta dolores odit eligendi quos placeat totam laudantium officiis labore atque itaque!</p>
+        </div>
+
+        <div id="glass" class="item">
+            <h3>Glassory</h3>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quisquam,
+                amet, soluta dolores odit eligendi quos placeat totam laudantium officiis labore atque itaque!</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
