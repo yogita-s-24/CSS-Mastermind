@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Links and Buttons</title>
+    <style>
+        .container
+        {
+            background-color: aqua;
+            border: 2px solid red;
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        a:hover{
+           color: rgb(65, 14, 14);      /* hover means pseduo property */
+            background-color: coral;
+        }
+
+        a:visited{
+            background-color:rgb(204, 171, 235);
+        }
+        a:active{
+            background-color:yellowgreen;
+        }
+        .btn{
+            background-color: rgb(251, 251, 40);
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+        .btn:hover{
+            background-color: rgb(226, 230, 167);
+            color:darkgoldenrod;
+            border:2px solid black;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vitae earum incidunt, fugit, accusantium iure
+            reiciendis eius dolore quisquam atque eaque corrupti quasi. Nobis accusamus sed possimus debitis, dolorum
+            aperiam.</p>
+            <a href="https://google.com" class="btn">Read More</a>
+            <button class="btn">Contact Us</button>
+    </div>
+
+</body>
+
+</html>
