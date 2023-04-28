@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        .container{
+            border: 3px solid blue;
+            background-color: aqua;
+            height: 3333px;
+        }
+        /* position:static(default),relative,absolute,fixed,sticky */
+        .box {
+            border: solid 2px red;
+            display: inline-block;
+            height: 150px;
+            width: 150px;
+            margin: 2px;
+        }
+
+        #box3,#box1 {
+            /* relative:relative to its normal position and will leave a gap at its normal position */
+            /* position: relative; */
+
+            /* absolute:relative to the position of its first parent */
+            /* position:absolute; */
+
+            /* top:34px;
+               left:134px; */
+
+            /*fixed: it is used for fix position on browser window like whatsapp option on browser*/
+            /* position: fixed; 
+            right: 4px;
+            bottom:2px; */
+
+            position:sticky;
+            top:3px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">Whatsapp</div>
+    <div class="box" id="box4">4</div>
+</div>
+</body>
+
+</html>
