@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selectors</title>
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: rgb(13, 13, 13);
+            background: url('https://www.istockphoto.com/photo/freedom-chains-that-transform-into-birds-charge-concept-gm1322104312-408167035?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Ffree&utm_term=free%3A%3A%3A') no-repeat center center/cover;
+        }
+
+        header::before {
+           
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        .navigation {
+            font-size: 20px;
+            display: flex;
+            
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+        }
+
+        section {
+            margin: 3px;
+            height: 344px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /*it is used for content move vertically center*/
+        }
+
+
+        /* For added the content */
+        section::before {
+            /* content: "It's Yoggi's Website Here"; */
+            font-size: 2rem;
+            color: rgba(237, 236, 229, 0.751);
+            background-color: blueviolet;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+        <section>
+            <h1>Welcome to My World</h1>
+            <p>You are always learning and challenging yourself...!</p>
+            <p>Coding is an essential skill for many professions in today's world.</p>
+        </section>
+        <hr>
+    </header>
+
+</body>
+
+</html>
