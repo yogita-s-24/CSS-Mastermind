@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxes and Shadows</title>
+    <style>
+        .container {
+            display: flex;
+
+        }
+
+        .card {
+            padding: 23 12px;
+            /* border:2px solid red; */
+            margin: 23px 12px;
+            background-color: khaki;
+
+            /* box-shadow: offset-x offset-y ccolor; */
+            /* box-shadow:offset-x offset-y blur-radius color; */
+            /* box-shadow:offset-x offset-y blur-radius spread-radius color; */
+
+            /* box-shadow: 10px 13px yellowgreen;  apply shadow RHS and bottom*/
+            /* box-shadow: -10px -13px green;    apply shadow LHS and top */
+            /* box-shadow:7px 5px 10px green; */
+
+            /* box-shadow:-7px -5px -10px green; */
+            /* box-shadow:-7px -5px 10px 34px green; */
+            /* box-shadow:-7px -5px 10px 34px rgba(14, 46, 14,3); */
+            /* box-shadow:inset 7px 5px  green;        In this case shadow will display in the box*/
+
+
+            /* Multiple Shadows */
+            box-shadow: 5px 6px green, 9px 10px white, 14px 18px blue, 19px 25px red;
+
+
+
+            
+        }
+        div h2{
+            /* Text Shadows */
+            color: aqua;
+            text-shadow: 3px 3px 2px rgb(220, 51, 51);;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is C++ Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque labore beatae nesciunt? Optio magni ullam
+                quaerat ipsa ipsam unde voluptate non libero accusantium cupiditate. Inventore sapiente accusamus culpa
+                modi harum!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>HTML Course Is Start</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis maiores autem architecto harum cum
+                debitis saepe aperiam! Eius consequuntur ut facere totam, voluptatem officiis id explicabo. Ullam
+                explicabo quod placeat!</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Also Started Java Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, doloribus modi. Hic, vel mollitia quasi
+                nesciunt accusamus autem fugiat pariatur dolorem? Excepturi nihil fugiat veniam quisquam voluptate harum
+                officiis! Eos!</p>
+        </div>
+    </div>
+</body>
+
+</html>
