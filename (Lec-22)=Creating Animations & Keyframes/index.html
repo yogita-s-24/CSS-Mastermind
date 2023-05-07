@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Animations & Keyframes</title>
+    <style>
+        .container {
+            background-color: aqua;
+        }
+
+        .box {
+            background-color: blueviolet;
+            height: 150px;
+            width: 150px;
+            position: relative;
+            /* for move the content*/
+            /* animation-name: yogii1; */
+            animation-name: yogii2;
+            /* animation-duration: 2s; */
+            animation-duration: 8s;
+            /* animation-iteration-count:2 ; */
+            animation-iteration-count: 1;
+            /* animation-fill-mode: alernate; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 3s; */
+            /* animation-direction: reverse; */
+
+            /* These properties can be set using this shorthand */
+            /* animation: animation-name animation-duration animation-timing-function animation-delay animation iteration-count animation-fill-mode; */
+            /* animation: yogii2 5s ease-in 1s 12 backwards; */
+        }
+
+        @keyframes yogii2 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 250px;
+                left: 0px;            /*this keyframe is uesd for box move in square */
+            }
+
+            75% {
+                top: 250px;
+                left: 250px;
+            }
+
+            100% {
+                top:0px;
+                left: 250px;
+            }
+
+
+
+
+           
+        }
+
+        @keyframes yogii1 {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 350px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+
+</body>
+
+</html>
