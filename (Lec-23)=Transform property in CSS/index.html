@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform property in CSS</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            height: 100vh;
+            background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+        .box{
+            font-size: 40px;
+            background-color: brown;
+            border:2px solid black;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            width: 200px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .box:hover{
+
+            /*rotate in circular */
+            /*transform: rotate(360deg);*/   
+
+
+            /*  \\ rotate in this direction  */
+             /* transform: skew(40deg); */
+
+            /* after hover increase the size of box  */
+             /* transform: scale(2); */
+
+             /* After hover box move in x direction of the container i.e RHS */
+             /* transform: translateX(125px); */
+
+              /* After hover box move in Y direction of the container i.e Bottom  */
+             /* transform: translateY(125px); */
+
+              /* After hover box move in LHS corner to RHS corner  of the container*/
+             transform: translate(125px, 125px);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <div class="box">
+           🌸
+        </div>
+    </div>
+    
+</body>
+</html>
