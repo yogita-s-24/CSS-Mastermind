@@ -1,0 +1,19 @@
+.container{
+    background-color: rgb(32, 26, 26);
+    height: 300px;
+    width: 400px;
+    border-radius: 15px;
+    margin: 100px auto ;
+    border: 3px rgb(0, 89, 255) solid;
+    display: flex;
+    align-items: center;
+}
+
+.img-profile{
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border: rgb(242, 242, 18) solid 3px;
+    
+}
