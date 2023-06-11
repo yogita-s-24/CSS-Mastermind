@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexboxes</title>
-    <style>
+    <title>Flexchildes</title>
 
-        
+    <style>
+        .container {
+            background-color: chartreuse;
+            padding: 10px;
+            display: flex;      
+           /* display flex property always apply to parent*/         
+        }
+
+        .child {
+            border: black solid 1px;
+            margin: 10px;
+            padding: 10px;
+            background-color: aquamarine;
+            border-radius: 15px;
+        }
     </style>
 </head>
+
 <body>
-    
+    <!-- Flexboxes means flexible childes -->
+    <div class="container">
+        <div class="child">
+            <h2>Child A</h2>
+        </div>
+        <div class="child">
+            <h2>Child B</h2>
+        </div>
+        <div class="child">
+            <h2>Child C</h2>
+        </div>
+        <div class="child">
+            <h2>Child D</h2>
+        </div>
+    </div>
+
 </body>
+
 </html>
