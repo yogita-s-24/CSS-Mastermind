@@ -7,13 +7,21 @@
     <title>Calculator</title>
     <style>
         .calculator-container {
-            background-color: #6a6aa8;
-            height: 400px;
+            background-color: #1a1a2f;
             width: 400px;
             margin: 0 auto;
             border-radius: 20px;
             padding: 10px;
-            margin-top: 50px;
+            margin-top: 60px;
+            padding-bottom: 40px;
+        }
+
+        .heading-title {
+            color: white;
+            font-size:20px;
+            display: flex;
+            justify-content: end;
+            margin-right: 20px;
         }
 
         .calculator-screen {
@@ -28,7 +36,24 @@
             border: none;
             border-radius: 5px;
             margin-bottom: 20px;
-           
+
+        }
+
+        .small{
+           display: flex;
+           justify-content: end;
+           margin-right: 20px;
+        }
+        .small-screen {
+            display: inline-block;
+        }
+        
+        .small-window {
+            background-color: #697b7b;
+            width: 20px;
+            border: 0.2px solid black;
+            border-radius: 2px;
+            
         }
 
         .button-row {
@@ -36,52 +61,65 @@
             justify-content: space-evenly;
         }
 
-        .cal-button{
-            height: 50px;
+        .cal-button {
+            height: 40px;
             width: 50px;
-            font-size: 35px;
-            border-radius: 50%;
-            margin-top: 10px;
+            font-size: 30px;
+            border-radius: 10px;
+            margin-top: 15px;
             border: none;
             cursor: pointer;
             padding: 5px;
-            border: 1px solid black;
+            border: none;
         }
 
-        .cal-button:hover{
-            font-size: 40px;
-            box-shadow: 0 0 0.5px white ;
-           
+        .cal-button:hover {
+            font-size: 35px;
+            box-shadow: 0 0 0 1px rgb(234, 224, 224);
+        }
+
+        .btn-red {
+            background-color: rgb(216, 142, 142);
         }
     </style>
 </head>
 
 <body>
     <div class="calculator-container">
+
+        <p class="heading-title">RTC</p>
+
         <input type="text" class="calculator-screen">
+        <div class="small">
+            <div class="small-screen"><input type="text" class="small-window"></div>
+            <div class="small-screen"><input type="text" class="small-window"></div>
+            <div class="small-screen"><input type="text" class="small-window"></div>
+
+        </div>
+
         <div class="button-row">
             <button class="cal-button">1</button>
             <button class="cal-button">2</button>
             <button class="cal-button">3</button>
-            <button class="cal-button">+</button>
+            <button class="cal-button btn-red">+</button>
         </div>
         <div class="button-row">
             <button class="cal-button">4</button>
             <button class="cal-button">5</button>
             <button class="cal-button">6</button>
-            <button class="cal-button">-</button>
+            <button class="cal-button btn-red">/</button>
         </div>
         <div class="button-row">
             <button class="cal-button">7</button>
             <button class="cal-button">8</button>
             <button class="cal-button">9</button>
-            <button class="cal-button">x</button>
+            <button class="cal-button btn-red">*</button>
         </div>
         <div class="button-row">
-            <button class="cal-button">.</button>
+            <button class="cal-button btn-red">.</button>
             <button class="cal-button">0</button>
-            <button class="cal-button">=</button>
-            <button class="cal-button">-</button>
+            <button class="cal-button btn-red">-</button>
+            <button class="cal-button btn-red">=</button>
         </div>
     </div>
 </body>
