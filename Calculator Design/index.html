@@ -7,8 +7,8 @@
     <title>Calculator</title>
     <style>
         .calculator-container {
-            background-color: #56569f;
-            height: 500px;
+            background-color: #6a6aa8;
+            height: 400px;
             width: 400px;
             margin: 0 auto;
             border-radius: 20px;
@@ -18,7 +18,7 @@
 
         .calculator-screen {
             font-size: 40px;
-            width: 350px;
+            width: 365px;
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -27,6 +27,31 @@
             background-color: #b3cccc;
             border: none;
             border-radius: 5px;
+            margin-bottom: 20px;
+           
+        }
+
+        .button-row {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .cal-button{
+            height: 50px;
+            width: 50px;
+            font-size: 35px;
+            border-radius: 50%;
+            margin-top: 10px;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        .cal-button:hover{
+            font-size: 40px;
+            box-shadow: 0 0 0.5px white ;
+           
         }
     </style>
 </head>
@@ -34,7 +59,30 @@
 <body>
     <div class="calculator-container">
         <input type="text" class="calculator-screen">
-        
+        <div class="button-row">
+            <button class="cal-button">1</button>
+            <button class="cal-button">2</button>
+            <button class="cal-button">3</button>
+            <button class="cal-button">+</button>
+        </div>
+        <div class="button-row">
+            <button class="cal-button">4</button>
+            <button class="cal-button">5</button>
+            <button class="cal-button">6</button>
+            <button class="cal-button">-</button>
+        </div>
+        <div class="button-row">
+            <button class="cal-button">7</button>
+            <button class="cal-button">8</button>
+            <button class="cal-button">9</button>
+            <button class="cal-button">x</button>
+        </div>
+        <div class="button-row">
+            <button class="cal-button">.</button>
+            <button class="cal-button">0</button>
+            <button class="cal-button">=</button>
+            <button class="cal-button">-</button>
+        </div>
     </div>
 </body>
 
