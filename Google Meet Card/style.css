@@ -1,23 +1,35 @@
-.container{
+.container {
     background-color: rgb(47, 43, 43);
-    height: 250px;
     width: 400px;
     border-radius: 15px;
-    margin: 100px auto ;
+    padding: 5px;
+    margin: 100px auto;
     border: 2px #3399ff solid;
-    display: flex;
+    display: block;
     align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
 }
+.img-mic{
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    display: block;
+    margin-left: auto;
 
-.img-profile{
+}
+.img-profile {
     height: 150px;
     border-radius: 50%;
     display: block;
     margin: 0 auto;
     border: #241f1f solid 3px;
-    
+   
 }
 
-.heading-title{
- display: inline;
+.heading-title {
+    margin-left: 10px;
+    color: white;
+    font-size: 18px;
 }
