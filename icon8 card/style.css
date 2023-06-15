@@ -1,0 +1,102 @@
+body {
+    background-color: black;
+}
+
+.container {
+    background-color: white;
+    height: 460px;
+    width: 550px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+ 
+.link-img{
+    height: 40px;
+    padding-top: 100px;
+    display: block;
+    margin: 0 auto;
+    
+   
+}
+
+.description{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 55px;
+    margin-right: 55px;
+    padding-top: 10px;
+}
+
+.small-description{
+    text-align: center;
+    font-size: 17px;
+}
+
+.tab-container{
+height: 30px;
+width: 160px;
+margin: 0 auto;
+}
+
+.des-left{
+   background-color: #e9e9f1;
+}
+.des-right{
+   background-color: white;
+}
+
+.tab{
+    font-size: 9px;
+    font-weight: bold;
+    width: 76px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    border: 0.5px solid black;
+    border-radius: 2px;
+}
+
+.down-description{
+    background-color: rgb(193, 208, 203);
+    height: 100px;
+    padding-bottom: 100px;   
+}
+
+.box-1{
+    height: 50px;
+    width: 260px;
+    display: inline-block;
+    padding: 15px;
+}
+.box-2{
+    height: 50px;
+    width: 250px;
+    display: inline-block;
+}
+
+.img-des{
+    height:165px;
+}
+
+.bottom-title{
+  padding: 5px;
+}
+
+.bottom-des{
+ font-size: 15px;
+}
+
+.btn{
+  margin-top: 7px;
+  border: none;
+  background-color: rgb(31 177 65);
+  color: white;
+  padding: 8px;
+  font-weight: bold;
+  border-radius: 5px;
+}
