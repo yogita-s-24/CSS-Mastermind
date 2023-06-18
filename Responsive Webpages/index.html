@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpages</title>
+    <style>
+        .btn {
+            background-color: blue;
+            color: wheat;
+            height: 60px;
+            width: 100px;
+        }
+
+        /*Mobile Device*/
+        @media screen and (min-width : 300px) and (max-width : 769px) {
+            .btn {
+                height: 100px;
+                width: 150px;
+            }
+        }
+            /*Tablet Device*/
+            @media screen and (min-width : 769px) and (max-width : 992px) {
+                .btn {
+                    height: 200px;
+                    width: 250px;
+                }
+            }
+                /*Latop Device */
+
+                @media screen and (min-width : 992px) and (max-width : 1200px) {
+                    .btn {
+                        height: 300px;
+                    width: 350px;
+                    }
+
+                }
+    </style>
+</head>
+
+<body>
+
+    <button class="btn">
+        This is button
+    </button>
+
+</body>
+
+</html>
