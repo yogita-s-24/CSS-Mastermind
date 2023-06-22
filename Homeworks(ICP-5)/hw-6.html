@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Form</title>
+    <style>
+        .title{
+            text-align: center;
+        }
+        
+        .container{
+            background-color: bisque;
+            width: 600px;
+            border: solid 1px black;
+            border-radius: 5px;
+            margin: 0 auto;
+        }
+
+        .content{
+            display: block;
+            margin: 0 auto;
+           padding: 0 50px 20px 50px;
+        }
+
+        .heading{
+        font-size: 20px;
+      
+        }
+        #selectLanguage{
+            font-size:15px;
+            padding: 5px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+            border: none;
+        }
+        input{
+            padding: 5px;
+            border-radius: 10px;
+            border: solid 0.5px black;
+            width: 300px;
+        }
+        button{
+            padding: 10px;
+            width: 150px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="container">
+            <h1 class="title">Course Registration Form</h1><hr/>
+            <div class="content">
+                <label for="name" class="heading">Student Name :</label>
+                <input type="text" placeholder="Enter Your Name" required ><br/><br/>
+
+                <label for="name" class="heading">College Name :</label>
+                <input type="text" placeholder="Enter Your College Name" required ><br/><br/>
+
+                <label for="inputEmail" class="heading">Email ID :</label>
+                <input type="email" id="inputEmail" placeholder="Enter Your Email" required /><br/><br/>
+
+                <label for="name" class="heading">Birth Date :</label>
+                <input type="date" required ><br/><br/>
+               
+                <label for="name" class="heading">Address :</label><br/>
+                <textarea id="address" name="address" rows="4" cols="60" required></textarea><br/><br/>
+               
+                <label for="selectLanguage" class="heading">Choose Course :</label> 
+                <select id="selectLanguage">
+                  <option>Choose Course </option>
+                  <option>C Programming</option>
+                  <option>C++ Programming</option>
+                  <option>Python</option>
+                  <option>ICP</option>
+                </select>
+                <br/><br/>
+                <button>Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
