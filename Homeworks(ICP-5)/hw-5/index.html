@@ -1,13 +1,78 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Iframe</title>
-  </head>
-  <body>
-    <h1>Homepage</h1>
-    <iframe src="about.html" height="200px" width="200px"></iframe> <br />
-    <br />
+<html lang="en">
 
-    <iframe src="contact.html" height="400px" width="200px"></iframe>
-  </body>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            /*background-color: blanchedalmond;*/
+        }
+
+        .Title {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .framEmb-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .framEmb {
+            box-shadow: 0 0 4px 5px rgb(60, 57, 57);
+            border-radius: 20px;
+        }
+
+        .tag-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+            background-color: rgb(212, 152, 232);
+            padding: 10px;
+        }
+
+        .tag-container a {
+            font-size: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tag-container">
+        <a href="hamburger.html" target="buy1">Burger</a>
+        <a href="piza.html" target="buy2">Pizza</a>
+        <a href="cofee.html" target="buy3">Cold Cofee</a>
+        <a href="sandwich.html" target="buy4">Sandwich</a>
+    </div>
+    
+    <iframe src="" height="1px" width="1px" name="buy">
+        <a href="hamburger.html" target="buy1">Burger</a>
+        <a href="piza.html" target="buy2">Pizza</a>
+        <a href="cofee.html" target="buy3">Cold Cofee</a>
+        <a href="sandwich.html" target="buy4">Sandwich</a>
+    </iframe>
+
+
+    <h1 class="Title">One Bite Cafe</h1>
+    <div class="framEmb-container">
+        <iframe class="framEmb" width="500" height="315" src="https://www.youtube.com/embed/MLb5lgJ-lG0"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <iframe class="framEmb" width="500" height="315"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d963961.5055748994!2d71.69612154687498!3d19.3052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b1d36cabbbed%3A0x27922050ab5bada3!2sOne%20Byte!5e0!3m2!1sen!2sin!4v1687367332421!5m2!1sen!2sin"
+            width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</body>
+
 </html>
